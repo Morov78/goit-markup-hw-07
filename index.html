@@ -24,52 +24,45 @@
     <!--заголовок страницы-->
     <header class="header">
       <div class="container">
-        <nav class="header-nav">
-          <a class="logo link" href=""
-            >Web<span class="logo-header">Studio</span></a
-          >
-
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a class="header-nav-link link header-nav-link-active" href=""
-                >Студия</a
-              >
+        <nav class="nav">
+          <a class="link logo" href=""
+            >Web<span class="header__logo">Studio</span>
+          </a>
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="link nav__link nav__link--active" href="">Студия</a>
             </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link link" href="./portfolio.html"
-                >Портфолио</a
-              >
+            <li class="nav__item">
+              <a class="link nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link link" href="">Контакты</a>
+            <li class="nav__item">
+              <a class="link nav__link" href="">Контакты</a>
             </li>
           </ul>
-          <ul class="header-contacts">
-            <li class="header-contacts-item">
-              <a
-                class="header-contacts-link link"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="header-contacts-post header-contacts-icon">
+          <ul class="list contacts">
+            <li class="contacts__item">
+              <a class="link contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon contacts__icon--post">
                   <use href="./images/icons.svg#icon-post"></use>
                 </svg>
-                info@devstudio.com</a
-              >
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header-contacts-item">
-              <a class="header-contacts-link link" href="tel:+380961111111"
-                ><svg class="header-contacts-phone header-contacts-icon">
+
+            <li class="contacts__item">
+              <a class="link contacts__link" href="tel:+380961111111"
+                ><svg class="contacts__icon contacts__icon--phone">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
-                +38 096 111 11 11</a
-              >
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div class="header-underline"></div>
+      <div class="underline"></div>
       <!--section hero-->
       <section class="hero">
         <div class="hero-container">
@@ -86,7 +79,7 @@
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
-          <ul class="features-list">
+          <ul class="list features-list">
             <li class="features-item">
               <div class="features-wrap">
                 <svg class="features-icon">
@@ -143,7 +136,7 @@
       <section class="services">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
-          <ul class="services-list">
+          <ul class="list services-list">
             <li class="services-item">
               <div class="services-tumb">
                 <img
@@ -187,7 +180,7 @@
       <section class="team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
-          <ul class="team-list">
+          <ul class="list team-list">
             <li class="team-item">
               <img
                 class="team-image image-block"
@@ -199,7 +192,7 @@
               <h3 class="team-item-title">Игорь Демьяненко</h3>
               <p class="team-item-txt">Product Designer</p>
 
-              <ul class="social-links">
+              <ul class="list social-links">
                 <li class="social-item">
                   <a class="social-link" href="">
                     <svg class="social-link-icon">
@@ -240,7 +233,7 @@
               />
               <h3 class="team-item-title">Ольга Репина</h3>
               <p class="team-item-txt">Frontend Developer</p>
-              <ul class="social-links">
+              <ul class="list social-links">
                 <li class="social-item">
                   <a class="social-link" href="">
                     <svg class="social-link-icon">
@@ -281,7 +274,7 @@
               />
               <h3 class="team-item-title">Николай Тарасов</h3>
               <p class="team-item-txt">Marketing</p>
-              <ul class="social-links">
+              <ul class="list social-links">
                 <li class="social-item">
                   <a class="social-link" href="">
                     <svg class="social-link-icon">
@@ -322,7 +315,7 @@
               />
               <h3 class="team-item-title">Михаил Ермаков</h3>
               <p class="team-item-txt">UI Designer</p>
-              <ul class="social-links">
+              <ul class="list social-links">
                 <li class="social-item">
                   <a class="social-link" href="">
                     <svg class="social-link-icon">
@@ -360,7 +353,7 @@
       <section class="clients">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
-          <ul class="clients-list">
+          <ul class="list clients-list">
             <li class="clients-item">
               <a class="clients-link" href=""
                 ><svg class="icon">
@@ -409,33 +402,38 @@
     </main>
     <!--подвал страницы-->
     <footer class="footer">
-      <div class="footer-container container">
-        <div class="footer-inner-adress">
-          <a class="logo link" href=""
-            >Web<span class="logo-footer">Studio</span></a
-          >
-          <address class="footer-text">
-            <ul class="footer-list">
-              <li class="footer-list-item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="footer-list-item">
-                <a class="footer-contacts link" href="mailto:info@example.com"
-                  >info@example.com</a
+      <div class="container footer__container">
+        <div class="left-wrap">
+          <a class="link logo" href="">
+            Web<span class="footer__logo">Studio</span>
+          </a>
+
+          <address class="address">
+            <ul class="list address__list">
+              <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="address__item">
+                <a
+                  class="link address__contacts"
+                  href="mailto:info@example.com"
                 >
+                  info@example.com
+                </a>
               </li>
-              <li class="footer-list-item">
-                <a class="footer-contacts link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="address__item">
+                <a class="link address__contacts" href="tel:+380991111111"
+                  >+38 099 111 11 11
+                </a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-inner-link">
-          <p class="fotter-inner-text">присоединяйтесь</p>
-          <ul class="social-links">
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-link-icon">
+
+        <div class="middle-wrap">
+          <p class="middle-wrap__label">присоединяйтесь</p>
+          <ul class="list social-links">
+            <li class="social-links__item">
+              <a class="link social-links__link" href="">
+                <svg class="social-links__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -463,6 +461,7 @@
             </li>
           </ul>
         </div>
+
         <form class="form-news">
           <div class="form-newsletter">
             <label for="email" class="form-newsletter-label">
