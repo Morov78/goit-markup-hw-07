@@ -24,43 +24,38 @@
     <!--заголовок страницы-->
     <header class="header">
       <div class="container">
-        <nav class="header-nav">
-          <a class="logo link" href=""
-            >Web<span class="logo-header">Studio</span></a
-          >
-
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a class="header-nav-link link" href="./index.html">Студия</a>
+        <nav class="nav">
+          <a class="link logo" href=""
+            >Web<span class="header__logo">Studio</span>
+          </a>
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="link nav__link" href="./index.html">Студия</a>
             </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link link header-nav-link-active" href=""
-                >Портфолио</a
-              >
+            <li class="nav__item">
+              <a class="link nav__link nav__link--active" href="">Портфолио</a>
             </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link link" href="">Контакты</a>
+            <li class="nav__item">
+              <a class="link nav__link" href="">Контакты</a>
             </li>
           </ul>
-          <ul class="header-contacts">
-            <li class="header-contacts-item">
-              <a
-                class="header-contacts-link link"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="header-contacts-post header-contacts-icon">
-                  <use href="./images/symbol-defs.svg#icon-post"></use>
+          <ul class="list contacts">
+            <li class="contacts__item">
+              <a class="link contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon contacts__icon--post">
+                  <use href="./images/icons.svg#icon-post"></use>
                 </svg>
-                info@devstudio.com</a
-              >
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header-contacts-item">
-              <a class="header-contacts-link link" href="tel:+380961111111"
-                ><svg class="header-contacts-phone header-contacts-icon">
-                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+
+            <li class="contacts__item">
+              <a class="link contacts__link" href="tel:+380961111111"
+                ><svg class="contacts__icon contacts__icon--phone">
+                  <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
-                +38 096 111 11 11</a
-              >
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
         </nav>
@@ -68,31 +63,40 @@
     </header>
     <main>
       <div class="header-underline"></div>
-      <section class="gallery">
+      <!-- Галерея -->
+      <section class="page-gallery">
         <div class="container">
           <h1 class="visually-hidden">Галерея работ</h1>
-          <ul class="gallery-button-list">
-            <li class="gallery-button-item">
-              <button class="gallery-button" type="button">Все</button>
+          <ul class="list buttons">
+            <li class="buttons__item">
+              <button class="page-gallery__button" type="button">Все</button>
             </li>
-            <li class="gallery-button-item">
-              <button class="gallery-button" type="button">Веб-сайты</button>
+            <li class="buttons__item">
+              <button class="page-gallery__button" type="button">
+                Веб-сайты
+              </button>
             </li>
-            <li class="gallery-button-item">
-              <button class="gallery-button" type="button">Приложения</button>
+            <li class="buttons__item">
+              <button class="page-gallery__button" type="button">
+                Приложения
+              </button>
             </li>
-            <li class="gallery-button-item">
-              <button class="gallery-button" type="button">Дизайн</button>
+            <li class="buttons__item">
+              <button class="page-gallery__button" type="button">Дизайн</button>
             </li>
-            <li class="gallery-button-item">
-              <button class="gallery-button" type="button">Маркетинг</button>
+            <li class="buttons__item">
+              <button class="page-gallery__button" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
-          <ul class="gallery-card-list">
-            <li class="gallery-card-item">
-              <a class="gallery-card-link link" href="">
-                <div class="gallery-card-tumb">
+
+          <ul class="list gallery">
+            <li class="gallery__item">
+              <a class="link gallery__link" href="">
+                <div class="gallery__wrap">
                   <img
+                    class="image"
                     src="./images/card1.jpg"
                     alt="Веб-сайт Технокряк"
                     width="370"
@@ -104,16 +108,17 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="gallery-card-desc">
-                  <h2 class="gallery-card-title">Технокряк</h2>
-                  <p class="gallery-card-text">Веб-сайт</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Технокряк</h2>
+                  <p class="gallery__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-card-item">
-              <a class="gallery-card-link link" href="">
-                <div class="gallery-card-tumb">
+            <li class="gallery__item">
+              <a class="link gallery__link" href="">
+                <div class="gallery__wrap">
                   <img
+                    class="image"
                     src="./images/card2.jpg"
                     alt="Постер New Orlean vs Golden Star"
                     width="370"
@@ -125,18 +130,19 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="gallery-card-desc">
-                  <h2 class="gallery-card-title">
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="gallery-card-text">Дизайн</p>
+                  <p class="gallery__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-card-item">
-              <a class="gallery-card-link link" href="">
-                <div class="gallery-card-tumb">
+            <li class="gallery__item">
+              <a class="link gallery__link" href="">
+                <div class="gallery__wrap">
                   <img
+                    class="image"
                     src="./images/card3.jpg"
                     alt="Ресторан Seafood"
                     width="370"
@@ -148,16 +154,17 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="gallery-card-desc">
-                  <h2 class="gallery-card-title">Ресторан Seafood</h2>
-                  <p class="gallery-card-text">Приложение</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Ресторан Seafood</h2>
+                  <p class="gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-card-item">
-              <a class="gallery-card-link link" href="">
-                <div class="gallery-card-tumb">
+            <li class="gallery__item">
+              <a class="link gallery__link" href="">
+                <div class="gallery__wrap">
                   <img
+                    class="image"
                     src="./images/card4.jpg"
                     alt="Проект Prime"
                     width="370"
@@ -169,16 +176,17 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="gallery-card-desc">
-                  <h2 class="gallery-card-title">Проект Prime</h2>
-                  <p class="gallery-card-text">Маркетинг</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Проект Prime</h2>
+                  <p class="gallery__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-card-item">
-              <a class="gallery-card-link link" href="">
-                <div class="gallery-card-tumb">
+            <li class="gallery__item">
+              <a class="link gallery__link" href="">
+                <div class="gallery__wrap">
                   <img
+                    class="image"
                     src="./images/card5.jpg"
                     alt="Проект Boxes"
                     width="370"
@@ -190,16 +198,17 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="gallery-card-desc">
-                  <h2 class="gallery-card-title">Проект Boxes</h2>
-                  <p class="gallery-card-text">Приложение</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Проект Boxes</h2>
+                  <p class="gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-card-item">
-              <a class="gallery-card-link link" href="">
-                <div class="gallery-card-tumb">
+            <li class="gallery__item">
+              <a class="link gallery__link" href="">
+                <div class="gallery__wrap">
                   <img
+                    class="image"
                     src="./images/card6.jpg"
                     alt="Веб-сайт Inspiration has no Borders"
                     width="370"
@@ -211,16 +220,17 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="gallery-card-desc">
-                  <h2 class="gallery-card-title">Inspiration has no Borders</h2>
-                  <p class="gallery-card-text">Веб-сайт</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Inspiration has no Borders</h2>
+                  <p class="gallery__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-card-item">
-              <a class="gallery-card-link link" href="">
-                <div class="gallery-card-tumb">
+            <li class="gallery__item">
+              <a class="link gallery__link" href="">
+                <div class="gallery__wrap">
                   <img
+                    class="image"
                     src="./images/card7.jpg"
                     alt="Издание Limited Edition"
                     width="370"
@@ -232,16 +242,17 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="gallery-card-desc">
-                  <h2 class="gallery-card-title">Издание Limited Edition</h2>
-                  <p class="gallery-card-text">Дизайн</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Издание Limited Edition</h2>
+                  <p class="gallery__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-card-item">
-              <a class="gallery-card-link link" href="">
-                <div class="gallery-card-tumb">
+            <li class="gallery__item">
+              <a class="link gallery__link" href="">
+                <div class="gallery__wrap">
                   <img
+                    class="image"
                     src="./images/card8.jpg"
                     alt="Проект LAB"
                     width="370"
@@ -253,16 +264,17 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="gallery-card-desc">
-                  <h2 class="gallery-card-title">Проект LAB</h2>
-                  <p class="gallery-card-text">Маркетинг</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Проект LAB</h2>
+                  <p class="gallery__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-card-item">
-              <a class="gallery-card-link link" href="">
-                <div class="gallery-card-tumb">
+            <li class="gallery__item">
+              <a class="link gallery__link" href="">
+                <div class="gallery__wrap">
                   <img
+                    class="image"
                     src="./images/card9.jpg"
                     alt="Growing Business"
                     width="370"
@@ -274,9 +286,9 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="gallery-card-desc">
-                  <h2 class="gallery-card-title">Growing Business</h2>
-                  <p class="gallery-card-text">Приложение</p>
+                <div class="gallery__desc">
+                  <h2 class="gallery__title">Growing Business</h2>
+                  <p class="gallery__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -286,82 +298,97 @@
     </main>
     <!--подвал страницы-->
     <footer class="footer">
-      <div class="footer-container container">
-        <div class="footer-inner-adress">
-          <a class="logo link" href=""
-            >Web<span class="logo-footer">Studio</span></a
-          >
-          <address class="footer-text">
-            <ul class="footer-list">
-              <li class="footer-list-item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="footer-list-item">
-                <a class="footer-contacts link" href="mailto:info@example.com"
-                  >info@example.com</a
+      <div class="container footer__container">
+        <div class="left-wrap">
+          <a class="link logo" href="">
+            Web<span class="footer__logo">Studio</span>
+          </a>
+
+          <address class="address">
+            <ul class="list address__list">
+              <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="address__item">
+                <a
+                  class="link address__contacts"
+                  href="mailto:info@example.com"
                 >
+                  info@example.com
+                </a>
               </li>
-              <li class="footer-list-item">
-                <a class="footer-contacts link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="address__item">
+                <a class="link address__contacts" href="tel:+380991111111"
+                  >+38 099 111 11 11
+                </a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-inner-link">
-          <p class="fotter-inner-text">присоединяйтесь</p>
-          <ul class="social-links">
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-link-icon">
+
+        <div class="middle-wrap">
+          <p class="middle-wrap__label">присоединяйтесь</p>
+          <ul class="list social-links footer__social-links">
+            <li class="social-links__item">
+              <a
+                class="link social-links__link social-links__link--footer"
+                href=""
+              >
+                <svg class="social-links__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-link-icon">
+            <li class="social-links__item">
+              <a
+                class="link social-links__link social-links__link--footer"
+                href=""
+              >
+                <svg class="social-links__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-link-icon">
+            <li class="social-links__item">
+              <a class="social-links__link social-links__link--footer" href="">
+                <svg class="social-links__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="">
-                <svg class="social-link-icon">
+            <li class="social-links__item">
+              <a
+                class="link social-links__link social-links__link--footer"
+                href=""
+              >
+                <svg class="social-links__icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="form-news">
-          <div class="form-newsletter">
-            <label for="email" class="form-newsletter-label">
+
+        <div class="right-wrap">
+          <form class="newsletter">
+            <label for="email" class="newsletter__label">
               Подпишитесь на рассылку
             </label>
-            <div class="form-newsletter-wrap">
+            <div class="newsletter__wrap">
               <input
                 id="email"
                 type="email"
                 name="email"
                 placeholder="E-mail"
-                class="form-newsletter-input"
+                class="newsletter__input"
               />
-              <button type="submit" class="form-newsletter-button button">
-                <span class="form-newletter-text">Подписаться</span>
-                <svg class="form-newsletter-icon">
+              <button type="submit" class="button newsletter__button">
+                <span class="newsletter__button-label">Подписаться</span>
+                <svg class="newsletter__button-icon">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
